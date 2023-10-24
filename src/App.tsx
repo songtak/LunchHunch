@@ -27,11 +27,11 @@ const App = () => {
       <a href="https://instagram.com/sn9tk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
         👉🔮👈
       </a>
-      <div style={{ marginTop: 30 }}>추후 다양한 기능 업데이트 예정</div>
 
       <div className="footer">
         <div>songtak</div>
         <div>2023.10.24</div>
+        <div style={{ marginTop: 30 }}>추후 다양한 기능 업데이트 예정</div>
       </div>
     </div>
   );
