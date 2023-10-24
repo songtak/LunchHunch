@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import _ from "lodash";
 import CryptoJS from "crypto-js";
 
-const PinMap = () => {
+const MarkerMap = () => {
   const mapElement = useRef(null);
   /** @ts-ignore */
   const { naver } = window;
@@ -55,28 +55,32 @@ const PinMap = () => {
       window.location.href = location.url;
     };
 
-    const content = `<div><div style="padding:10px;min-width:150px;">${
-      location.category
+    // <div>${
+    //   isMobile() && !_.isUndefined(location.url)
+    //     ? `<a style="z-index: 999999999;" href=${location.url}>바로가기</a>`
+    //     : ""
+    // }</div>
+
+    var content = `<div><div style="padding:10px;min-width:150px;">${
+      !_.isUndefined(location.menu) ? location.category : ""
     }</div><div>${location.name}<div><div>open: ${
+      !_.isUndefined(location?.openhour) &&
       !_.isUndefined(location.openhour.split(",")[0])
         ? location.openhour.split(",")[0]
         : "-"
     }<div>
-    <div>close: ${
-      !_.isUndefined(location.openhour.split(",")[1])
-        ? location.openhour.split(",")[1]
-        : "-"
-    }<div><div>${
+        <div>close: ${
+          !_.isUndefined(location?.openhour) &&
+          !_.isUndefined(location.openhour.split(",")[1])
+            ? location.openhour.split(",")[1]
+            : "-"
+        }<div><div>${
       !_.isUndefined(location.closeDay) ? location.closeDay : "-"
-    }</div><div style="padding:10px;">${location.price}<div>
-    <div>${location.menu}</div>
-    <div>${
-      isMobile() && !_.isUndefined(location.url)
-        ? `<a href="${location.url}">바로가기</a>` // 여기에서 수정하였습니다.
-        : ""
-    }</div>
-
-    </div>`; // 여기에 원하는 내용을 추가/수정할 수 있습니다.
+    }</div><div style="padding:10px;">${
+      !_.isUndefined(location.price) ? location.price : "-"
+    }<div>
+        <div>${!_.isUndefined(location.menu) ? location.menu : "-"}</div>
+        </div>`;
 
     const clickedInfoWindow = new naver.maps.InfoWindow({
       content: content,
@@ -173,4 +177,4 @@ const PinMap = () => {
   }
 };
 
-export default PinMap;
+export default MarkerMap;

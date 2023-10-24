@@ -4,7 +4,7 @@ import "./Mobile.css";
 import _ from "lodash";
 
 import EncryptedJson from "./utils/EncryptedJson";
-import PinMap from "./containers/PinMap";
+import PinMap from "./containers/MarkerMap";
 import AdSense from "./containers/AdSense";
 
 const App = () => {
