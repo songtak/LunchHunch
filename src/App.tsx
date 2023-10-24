@@ -19,7 +19,8 @@ const App = () => {
       <div className="title_sub">
         <div>한남동 직장인 점심메뉴 추천</div>
         <div style={{ marginTop: "10px", fontSize: 14 }}>
-          (* 한남동 맛집 아님, 단순 직장인 점심메뉴 모음)
+          (* 한남동 맛집 아님, 단순 직장인 점심메뉴 모음, pc에서 보는걸 추천
+          드립니다.)
         </div>
       </div>
 

@@ -136,7 +136,9 @@ const MarkerMap = () => {
           if (isMobile()) {
             handleClickMarker(marker, map, location);
           } else {
-            window.location.href = location.url;
+            const openNewWindow = window.open("about:blank");
+            /** @ts-ignore */
+            openNewWindow.location.href = location.url;
           }
         });
         // 마커 호버 리스너
@@ -156,7 +158,7 @@ const MarkerMap = () => {
 
   return (
     <>
-      <div ref={mapElement} style={{ minHeight: "400px" }} />
+      <div ref={mapElement} style={{ minHeight: "60vh" }} />
     </>
   );
 

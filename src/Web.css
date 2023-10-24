@@ -9,18 +9,18 @@
     overflow: visible;
     /* height: 90vh; */
 
-    padding-top: 100px;
+    padding-top: 40px;
     /* background-color: rgb(250, 255, 238); */
   }
 
   .title {
-    font-size: 100px;
-    padding-bottom: 50px;
+    font-size: 60px;
+    padding-bottom: 20px;
     /* width: 730px; */
     text-align: center;
   }
   .title_sub {
-    font-size: 50px;
+    font-size: 30px;
     padding-bottom: 50px;
     /* width: 730px; */
     text-align: center;
@@ -100,13 +100,18 @@
   }
 
   .footer {
-    position: absolute;
+    margin-top: 30px;
     bottom: 0;
+    text-align: center;
+    /* height: 50px; */
+    margin-bottom: 16px;
+    /* position: absolute; */
+    /* bottom: 0;
     left: 50%;
     transform: translate(-50%);
 
     text-align: center;
-    height: 80px;
+    height: 80px; */
   }
 
   .contents_container {
