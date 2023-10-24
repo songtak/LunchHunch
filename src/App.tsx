@@ -5,6 +5,7 @@ import _ from "lodash";
 
 import EncryptedJson from "./utils/EncryptedJson";
 import PinMap from "./containers/PinMap";
+import AdSense from "./containers/AdSense";
 
 const App = () => {
   console.log(
@@ -15,9 +16,11 @@ const App = () => {
   return (
     <div className="App">
       <div className="title">Lunch Hunch</div>
-      <div className="title_sub">한남동 직장인 점심메뉴 추천</div>
-      <div style={{ marginBottom: "30px" }}>
-        (* 한남동 맛집 아님, 단순 직장인 점심메뉴 모음)
+      <div className="title_sub">
+        <div>한남동 직장인 점심메뉴 추천</div>
+        <div style={{ marginTop: "10px", fontSize: 14 }}>
+          (* 한남동 맛집 아님, 단순 직장인 점심메뉴 모음)
+        </div>
       </div>
 
       <PinMap />
@@ -27,11 +30,15 @@ const App = () => {
       <a href="https://instagram.com/sn9tk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
         👉🔮👈
       </a>
+      <div style={{ marginTop: 10, fontSize: 10 }}>
+        추후 다양한 기능 업데이트 예정
+      </div>
+      <div>
+        <AdSense />
+      </div>
 
       <div className="footer">
-        <div>songtak</div>
-        <div>2023.10.24</div>
-        <div style={{ marginTop: 30 }}>추후 다양한 기능 업데이트 예정</div>
+        <div>songtak@2023.10.24</div>
       </div>
     </div>
   );
