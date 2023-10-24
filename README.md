@@ -1,2 +1,2 @@
-# LunchHunch
-Lunch menu recommendation website for workers in Hannam-dong.
+# saju-with-chatgpt
+chatGpt를 이용한 사주 풀이
