@@ -7,6 +7,11 @@ import EncryptedJson from "./utils/EncryptedJson";
 import PinMap from "./containers/PinMap";
 
 const App = () => {
+  console.log(
+    "REACT_APP_NAVER_MAPS_CLIENT_ID",
+    process.env.REACT_APP_NAVER_MAPS_CLIENT_ID
+  );
+
   return (
     <div className="App">
       <div className="title">Lunch Hunch</div>
