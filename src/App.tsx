@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="title">Lunch Hunch</div>
+      <div className="title">Lunch Hunch.demo</div>
       <div className="title_sub">
         <div>한남동 직장인 점심메뉴 추천</div>
         <div style={{ marginTop: "10px", fontSize: 14 }}>
@@ -31,7 +31,7 @@ const App = () => {
         👉🔮👈
       </a>
       <div style={{ marginTop: 10, fontSize: 10 }}>
-        추후 다양한 기능 업데이트 예정
+        ( 추후 다양한 기능 업데이트 예정입니다. )
       </div>
       <div>
         <AdSense />
