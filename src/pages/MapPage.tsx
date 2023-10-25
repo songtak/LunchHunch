@@ -1,7 +1,12 @@
 import React from "react";
+import MarkerMap from "../containers/MarkerMap";
 
 const MapPage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <MarkerMap />
+    </div>
+  );
 };
 
 export default MapPage;

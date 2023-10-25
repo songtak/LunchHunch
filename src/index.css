@@ -1,3 +1,4 @@
+html,
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,6 +6,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }
 
 code {
@@ -28,4 +34,61 @@ code {
 
 .start_button:hover {
   box-shadow: 3px 3px 10px -6px rgba(0, 0, 0, 0.82);
+}
+
+@font-face {
+  font-family: "Bolderslant";
+  src: url("../src/assets/Bolderslant.ttf") format("truetype");
+}
+@font-face {
+  font-family: "cursyger";
+  src: url("../src/assets/cursyger.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Hugest";
+  src: url("../src/assets/Hugest.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LCMogi";
+  src: url("../src/assets/LCMogi-A.ttf") format("truetype");
+}
+@font-face {
+  font-family: "rondula";
+  src: url("../src/assets/rondula.ttf") format("truetype");
+}
+@font-face {
+  font-family: "YouDense";
+  src: url("../src/assets/YouDense-Glass-BlowBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Chilgok";
+  src: url("../src/assets/Chilgok_lws.ttf") format("truetype");
+}
+
+.Bolderslant {
+  font-family: "Bolderslant";
+
+  /* font-size: 32px;
+  color: cornflowerblue;
+  margin-top: 32px;
+  margin-left: 32px; */
+}
+
+.cursyger {
+  font-family: "cursyger";
+}
+.Hugest {
+  font-family: "Hugest";
+}
+.LCMogi {
+  font-family: "LCMogi";
+}
+.rondula {
+  font-family: "rondula";
+}
+.YouDense {
+  font-family: "YouDense";
+}
+.Chilgok {
+  font-family: "Chilgok";
 }

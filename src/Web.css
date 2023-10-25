@@ -8,7 +8,7 @@
     padding-right: 25%;
     overflow: visible;
     /* height: 90vh; */
-
+    height: 100%;
     padding-top: 40px;
     /* background-color: rgb(250, 255, 238); */
   }
@@ -103,6 +103,7 @@
     margin-top: 30px;
     bottom: 0;
     text-align: center;
+
     /* height: 50px; */
     margin-bottom: 16px;
     /* position: absolute; */
