@@ -1,17 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "./Web.css";
 import "./Mobile.css";
 import _ from "lodash";
+import ReactGA from "react-ga4";
 
 import EncryptedJson from "./utils/EncryptedJson";
 import PinMap from "./containers/MarkerMap";
 import AdSense from "./containers/AdSense";
 
 const App = () => {
-  console.log(
-    "REACT_APP_NAVER_MAPS_CLIENT_ID",
-    process.env.REACT_APP_NAVER_MAPS_CLIENT_ID
-  );
+  useEffect(() => {
+    if (process.env.REACT_APP_PROD) {
+      /** @ts-ignore */
+      ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+      ReactGA.set({ page: "main" });
+      ReactGA.send("pageview");
+    }
+  }, []);
 
   return (
     <div className="App">

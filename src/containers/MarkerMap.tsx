@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 import _ from "lodash";
 import CryptoJS from "crypto-js";
+import ReactGA from "react-ga4";
 
 const MarkerMap = () => {
   const mapElement = useRef(null);
@@ -24,6 +25,18 @@ const MarkerMap = () => {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     );
+  };
+
+  const handleClickUrl = (url: string) => {
+    if (process.env.REACT_APP_PROD === "true") {
+      console.log("????");
+
+      ReactGA.event({
+        category: "Event",
+        action: "상세 url 클릭",
+        label: url,
+      });
+    }
   };
 
   const decryptedJson = (encryptedData: string) => {
@@ -136,6 +149,7 @@ const MarkerMap = () => {
           if (isMobile()) {
             handleClickMarker(marker, map, location);
           } else {
+            handleClickUrl(location.url);
             const openNewWindow = window.open("about:blank");
             /** @ts-ignore */
             openNewWindow.location.href = location.url;
