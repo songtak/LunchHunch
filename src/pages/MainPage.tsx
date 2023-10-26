@@ -33,7 +33,7 @@ const MainPage = () => {
           className="button-28 "
           role="button"
           onClick={() => {
-            handleClickLocation("/random");
+            handleClickLocation("/#random");
           }}
         >
           랜덤
@@ -44,7 +44,7 @@ const MainPage = () => {
           className="button-28 "
           role="button"
           onClick={() => {
-            handleClickLocation("/map");
+            handleClickLocation("/#map");
           }}
         >
           지도
