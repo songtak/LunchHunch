@@ -5,20 +5,36 @@
     padding-left: 5%;
     padding-right: 5%;
     overflow: visible;
+    /* height: calc(100% - 60px);
+    padding-top: 40px;
+    position: relative;
+    padding-bottom: 19px; */
     /* height: 90vh; */
 
-    padding-top: 60px;
+    /* padding-top: 60px; */
     /* background-color: rgb(250, 255, 238); */
+    min-height: 100%;
+    /* flex 컨테이너 설정 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main_page_content {
+    margin-top: 20px;
+  }
+
+  .title_wrapper_main {
+    margin-top: 40px;
   }
 
   .title {
-    font-size: 40px;
-    padding-bottom: 30px;
+    font-size: 60px;
+    padding-bottom: 3px;
     /* width: 730px; */
     text-align: center;
   }
   .title_sub {
-    font-size: 20px;
+    font-size: 24px;
     padding-bottom: 30px;
     /* width: 730px; */
     text-align: center;
@@ -36,61 +52,8 @@
     pointer-events: none;
   }
 
-  .start_button {
-    display: inline-block;
-    color: aliceblue;
-    font-weight: bold;
-    background-color: cornflowerblue;
-    height: 40px;
-    line-height: 40px;
-    width: 100px;
-    border-radius: 20px;
-    margin-top: 32px;
-    cursor: pointer;
-    transition: all 0.3s ease-out 0.1s;
-  }
-
-  .start_button:hover {
-    box-shadow: 3px 3px 10px -6px rgba(0, 0, 0, 0.82);
-  }
-
   .button {
     cursor: pointer;
-  }
-
-  .insta_link_button {
-    position: relative;
-    transition: all 0.2s ease-out 0.1s;
-    cursor: pointer;
-  }
-  .insta_link_button:hover {
-  }
-
-  .insta_link_button:hover:before {
-    content: "팔로우하기";
-    /* color: rgb(229, 90, 227); */
-  }
-  .insta_link_button:hover span {
-    display: none;
-  }
-
-  .kakao_link_button {
-    position: relative;
-    transition: all 0.4s ease-out 0.1s;
-    cursor: pointer;
-  }
-
-  .kakao_link_button:hover {
-    content: "참여하기";
-    /* color: rgb(249, 211, 42); */
-  }
-  .kakao_link_button:hover span {
-    display: none;
-  }
-
-  .kakao_link_button:hover:before {
-    content: "참여하기";
-    /* color: rgb(249, 211, 42); */
   }
 
   .center {
@@ -98,11 +61,19 @@
   }
 
   .footer {
-    margin-top: 30px;
-    bottom: 0;
     text-align: center;
+    padding: 10px;
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-bottom: 24px; */
+    /* margin-top: 30px;
+    bottom: 0;
+    text-align: center; */
     /* height: 50px; */
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
   }
 
   .contents_container {
@@ -112,36 +83,19 @@
   .contents_title {
     font-size: 26px;
   }
+  /* ============================================================================================ */
 
-  .contents {
-    font-size: 20px;
-    padding: 16px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 8px;
-    border: 2px solid rgba(0, 0, 239, 0.211);
-    border-radius: 40px;
-    cursor: pointer;
+  .menu_title {
+    font-size: 26px;
+    margin-bottom: 24px;
+    font-weight: 700;
   }
-
-  .contents:hover {
-    border: 2px solid rgba(0, 0, 239, 0.574);
-    transition: all 0.4s ease-out 0.1s;
+  .menu_content_title {
+    font-size: 28px;
   }
-  .contents_3 {
-    font-size: 20px;
-    padding: 16px;
-    margin: 8px;
-    padding-left: 50px;
-    padding-right: 44px;
-    border: 2px solid rgba(121, 197, 104, 0.601);
-    border-radius: 40px;
-    cursor: pointer;
+  .menu_content {
+    margin-bottom: 16px;
   }
-
-  .contents_3:hover {
-  }
-
   /* ============================================================================================ */
 
   .padding_bottom {

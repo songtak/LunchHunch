@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-
-import _ from "lodash";
 import CryptoJS from "crypto-js";
 import ReactGA from "react-ga4";
+import _ from "lodash";
+
+import useMenuList from "../libs/useMenuList";
 
 const MarkerMap = () => {
   const mapElement = useRef(null);
@@ -11,15 +12,8 @@ const MarkerMap = () => {
 
   const [infoWindow, setInfoWindow] = useState<any>(null);
 
-  const [locations, setLocations] = useState<any>([]);
-
-  const secretKey = process.env.REACT_APP_ENCRYPTION_KEY;
-
-  const REACT_APP_HANNAMDONG_LIST = [
-    { env: process.env.REACT_APP_HANNAMDONG_LIST_1 },
-    { env: process.env.REACT_APP_HANNAMDONG_LIST_2 },
-    { env: process.env.REACT_APP_HANNAMDONG_LIST_3 },
-  ];
+  /** 메뉴 목록 */
+  const locations = useMenuList();
 
   const isMobile = () => {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -29,24 +23,12 @@ const MarkerMap = () => {
 
   const handleClickUrl = (url: string) => {
     if (process.env.REACT_APP_PROD === "true") {
-      console.log("????");
-
       ReactGA.event({
         category: "Event",
         action: "상세 url 클릭",
         label: url,
       });
     }
-  };
-
-  const decryptedJson = (encryptedData: string) => {
-    /** @ts-ignore */
-    const bytes = CryptoJS.AES.decrypt(encryptedData, secretKey);
-    const decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
-
-    decryptedData.map((item: any) => {
-      locations.push(item);
-    });
   };
 
   const handleClickMarker = (
@@ -110,12 +92,6 @@ const MarkerMap = () => {
   };
 
   useEffect(() => {
-    REACT_APP_HANNAMDONG_LIST.map((item: any) => {
-      !_.isUndefined(item.env) && decryptedJson(item.env);
-    });
-  }, []);
-
-  useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(success, error);
     }
@@ -172,7 +148,11 @@ const MarkerMap = () => {
 
   return (
     <>
-      <div ref={mapElement} style={{ minHeight: "60vh" }} />
+      <div
+        ref={mapElement}
+        className="mapContainer"
+        style={{ minHeight: "60vh" }}
+      />
     </>
   );
 

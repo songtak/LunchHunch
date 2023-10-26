@@ -18,24 +18,126 @@ code {
     monospace;
 }
 
-.start_button {
-  display: inline-block;
-  color: aliceblue;
-  font-weight: bold;
-  background-color: cornflowerblue;
-  height: 40px;
-  line-height: 40px;
-  width: 100px;
-  border-radius: 20px;
-  margin-top: 32px;
-  cursor: pointer;
-  transition: all 0.3s ease-out 0.1s;
-}
-
 .start_button:hover {
   box-shadow: 3px 3px 10px -6px rgba(0, 0, 0, 0.82);
 }
 
+/** ===================================================================================== */
+.h_center {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+/** ===================================================================================== */
+
+.mt_30 {
+  margin-top: 30px;
+}
+
+/** ===================================================================================== */
+.mapContainer {
+  min-height: 40vh;
+  border: 4px solid black;
+}
+/** ===================================================================================== */
+.button {
+  cursor: pointer;
+}
+/** ===================================================================================== */
+
+/* CSS */
+.button-27 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/** ===================================================================================== */
+
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3b3b3b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/** ===================================================================================== */
 @font-face {
   font-family: "Bolderslant";
   src: url("../src/assets/Bolderslant.ttf") format("truetype");
@@ -64,14 +166,25 @@ code {
   font-family: "Chilgok";
   src: url("../src/assets/Chilgok_lws.ttf") format("truetype");
 }
+@font-face {
+  font-family: "yuri";
+  src: url("../src/assets/yuri.ttf") format("truetype");
+}
+@font-face {
+  font-family: "father";
+  src: url("../src/assets/father.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KoddiUDOnGothic-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/KoddiUDOnGothic-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .Bolderslant {
   font-family: "Bolderslant";
-
-  /* font-size: 32px;
-  color: cornflowerblue;
-  margin-top: 32px;
-  margin-left: 32px; */
 }
 
 .cursyger {
@@ -91,4 +204,14 @@ code {
 }
 .Chilgok {
   font-family: "Chilgok";
+}
+.yuri {
+  font-family: "yuri";
+}
+.father {
+  font-family: "father";
+}
+
+.KoddiUDOnGothic-Regular {
+  font-family: "KoddiUDOnGothic-Regular";
 }
