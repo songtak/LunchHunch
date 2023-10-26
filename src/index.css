@@ -148,7 +148,7 @@ code {
 }
 @font-face {
   font-family: "Hugest";
-  src: url("../src/assets/Hugest.woff") format("truetype");
+  src: url("../src/assets/Hugest.woff") format("woff");
 }
 @font-face {
   font-family: "LCMogi";
@@ -176,7 +176,7 @@ code {
 }
 @font-face {
   font-family: "StayPuft";
-  src: url("../src/assets/StayPuft.woff") format("truetype");
+  src: url("../src/assets/StayPuft.woff") format("woff");
 }
 
 @font-face {
