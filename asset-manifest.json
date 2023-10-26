@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/LunchHunch/static/css/main.c44dd187.css",
-    "main.js": "/LunchHunch/static/js/main.0a536394.js",
+    "main.css": "/LunchHunch/static/css/main.77421858.css",
+    "main.js": "/LunchHunch/static/js/main.716c6351.js",
     "static/js/787.d844ba0d.chunk.js": "/LunchHunch/static/js/787.d844ba0d.chunk.js",
+    "static/media/Chilgok_lws.ttf": "/LunchHunch/static/media/Chilgok_lws.82c2fcd50675624f43ca.ttf",
+    "static/media/yuri.ttf": "/LunchHunch/static/media/yuri.f03c3b5c294b4de1ea32.ttf",
+    "static/media/father.ttf": "/LunchHunch/static/media/father.8e45ef5199e72ca5b914.ttf",
+    "static/media/cursyger.ttf": "/LunchHunch/static/media/cursyger.345df20ac918a50e9a34.ttf",
+    "static/media/Bolderslant.ttf": "/LunchHunch/static/media/Bolderslant.8845cf92f884cfdc6e98.ttf",
+    "static/media/YouDense-Glass-BlowBold.ttf": "/LunchHunch/static/media/YouDense-Glass-BlowBold.14a4ce0388d221deb71a.ttf",
+    "static/media/LCMogi-A.ttf": "/LunchHunch/static/media/LCMogi-A.c9d38faf9f88b1215869.ttf",
+    "static/media/Hugest.ttf": "/LunchHunch/static/media/Hugest.c1b855f66b5535a39763.ttf",
+    "static/media/rondula.ttf": "/LunchHunch/static/media/rondula.b1ed230a00dd45ad3f45.ttf",
     "index.html": "/LunchHunch/index.html",
-    "main.c44dd187.css.map": "/LunchHunch/static/css/main.c44dd187.css.map",
-    "main.0a536394.js.map": "/LunchHunch/static/js/main.0a536394.js.map",
+    "main.77421858.css.map": "/LunchHunch/static/css/main.77421858.css.map",
+    "main.716c6351.js.map": "/LunchHunch/static/js/main.716c6351.js.map",
     "787.d844ba0d.chunk.js.map": "/LunchHunch/static/js/787.d844ba0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c44dd187.css",
-    "static/js/main.0a536394.js"
+    "static/css/main.77421858.css",
+    "static/js/main.716c6351.js"
   ]
 }
