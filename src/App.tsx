@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <ErrorBoundary>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.REACT_APP_BASE_URL}>
         <ScrollToTop />
         <Routes>
           <Route path="/*" element={<MainRouter />} />
