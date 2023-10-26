@@ -6,7 +6,7 @@ import useMenuList from "../libs/useMenuList";
 import SingleMarkerMap from "../containers/SingleMarkerMap";
 
 // animate__headShake
-const MainPage = () => {
+const MainPage = ({ setSelectedPage }: any) => {
   const handleClickLocation = (url: string) => {
     window.location.href = url;
   };
@@ -33,7 +33,8 @@ const MainPage = () => {
           className="button-28 "
           role="button"
           onClick={() => {
-            handleClickLocation("/#random");
+            setSelectedPage("random");
+            // handleClickLocation("/#random");
           }}
         >
           랜덤
@@ -44,6 +45,7 @@ const MainPage = () => {
           className="button-28 "
           role="button"
           onClick={() => {
+            setSelectedPage("map");
             handleClickLocation("/#map");
           }}
         >

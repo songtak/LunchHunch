@@ -3,22 +3,22 @@ import * as Pages from "../pages";
 
 export const MainRoutes: RoutePropInterface[] = [
   {
-    title: "메인 페이지",
+    title: "main",
     path: "/",
     element: Pages.MainPage,
   },
   {
-    title: "랜덤 메뉴",
+    title: "random",
     path: "/random",
     element: Pages.RandomMenuPage,
   },
   {
-    title: "목록",
+    title: "list",
     path: "/list",
     element: Pages.ListPage,
   },
   {
-    title: "지도",
+    title: "map",
     path: "/map",
     element: Pages.MapPage,
   },

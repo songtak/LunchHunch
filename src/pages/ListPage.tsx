@@ -1,6 +1,6 @@
 import React from "react";
 
-const ListPage = () => {
+const ListPage = ({ setSelectedPage }: any) => {
   return <div></div>;
 };
 
