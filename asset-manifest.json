@@ -11,15 +11,12 @@
     "static/media/YouDense-Glass-BlowBold.ttf": "/LunchHunch/static/media/YouDense-Glass-BlowBold.14a4ce0388d221deb71a.ttf",
     "static/media/StayPuft.woff": "/LunchHunch/static/media/StayPuft.29ee64929efa142efc08.woff",
     "static/media/LCMogi-A.ttf": "/LunchHunch/static/media/LCMogi-A.c9d38faf9f88b1215869.ttf",
-    "static/media/Hugest.woff": "/LunchHunch/static/media/Hugest.091e7add36c1877c9cb4.woff",
+    "static/media/Hugest.woff": "/static/media/Hugest.091e7add36c1877c9cb4.woff",
     "static/media/rondula.ttf": "/LunchHunch/static/media/rondula.b1ed230a00dd45ad3f45.ttf",
     "index.html": "/LunchHunch/index.html",
     "main.d78e6597.css.map": "/LunchHunch/static/css/main.d78e6597.css.map",
     "main.8f18385f.js.map": "/LunchHunch/static/js/main.8f18385f.js.map",
     "787.d844ba0d.chunk.js.map": "/LunchHunch/static/js/787.d844ba0d.chunk.js.map"
   },
-  "entrypoints": [
-    "static/css/main.d78e6597.css",
-    "static/js/main.8f18385f.js"
-  ]
+  "entrypoints": ["static/css/main.d78e6597.css", "static/js/main.8f18385f.js"]
 }
