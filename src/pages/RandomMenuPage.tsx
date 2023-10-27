@@ -16,8 +16,10 @@ const RandomMenuPage = ({ setSelectedPage }: any) => {
   };
 
   useEffect(() => {
-    locations.length > 0 && setRandomMenu(locations[randomNumber]);
-  }, [locations]);
+    _.isUndefined(randomMenu) &&
+      locations.length > 0 &&
+      setRandomMenu(locations[randomNumber]);
+  }, [locations, randomMenu]);
 
   return (
     <div>

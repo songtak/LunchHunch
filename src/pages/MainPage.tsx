@@ -28,7 +28,7 @@ const MainPage = ({ setSelectedPage }: any) => {
           </div>
         </div>
       </div>
-      <div className="KoddiUDOnGothic-Regular mt_30">
+      <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
         <button
           className="button-28 "
           role="button"
@@ -40,19 +40,19 @@ const MainPage = ({ setSelectedPage }: any) => {
           랜덤
         </button>
       </div>
-      <div className="KoddiUDOnGothic-Regular mt_30">
+      <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
         <button
           className="button-28 "
           role="button"
           onClick={() => {
             setSelectedPage("map");
-            handleClickLocation("/#map");
+            // handleClickLocation("/#map");
           }}
         >
           지도
         </button>
       </div>
-      <div className="KoddiUDOnGothic-Regular mt_30">
+      <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
         <button
           className="button-28 "
           role="button"
