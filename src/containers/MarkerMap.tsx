@@ -56,29 +56,39 @@ const MarkerMap = () => {
     //     : ""
     // }</div>
 
-    var content = `<div><div style="padding:10px;min-width:150px;">${
+    var content = `<div style="margin:16px;min-width:150px;" ><div style="margin-bottom:8px" >${
       !_.isUndefined(location.menu) ? location.category : ""
-    }</div><div>${location.name}<div><div>open: ${
+    }</div><div style="font-size:20px;font-weight:700;margin-bottom:12px">${
+      location.name
+    }</div><div style="font-size:14px;font-weight:400;">open: ${
       !_.isUndefined(location?.openhour) &&
       !_.isUndefined(location.openhour.split(",")[0])
         ? location.openhour.split(",")[0]
         : "-"
-    }<div>
+    }</div>
         <div>close: ${
           !_.isUndefined(location?.openhour) &&
           !_.isUndefined(location.openhour.split(",")[1])
             ? location.openhour.split(",")[1]
             : "-"
-        }<div><div>${
+        }</div><div>${
       !_.isUndefined(location.closeDay) ? location.closeDay : "-"
     }</div><div style="padding:10px;">${
       !_.isUndefined(location.price) ? location.price : "-"
-    }<div>
+    }</div>
         <div>${!_.isUndefined(location.menu) ? location.menu : "-"}</div>
         </div>`;
 
     const clickedInfoWindow = new naver.maps.InfoWindow({
       content: content,
+      // maxWidth: 140,
+      // backgroundColor: "#eee",
+      borderColor: "black",
+      borderWidth: 5,
+      borderRadius: 300,
+      anchorSkew: true,
+      // anchorSize: new naver.maps.Size(30, 30),
+      // pixelOffset: new naver.maps.Point(20, -20),
     });
 
     /** @ts-ignore */

@@ -11,15 +11,13 @@ const RandomMenuPage = ({ setSelectedPage }: any) => {
 
   const randomNumber = Math.floor(Math.random() * (locations.length + 2));
 
-  const handleClickRandom = () => {
-    setRandomMenu(locations[randomNumber]);
+  const handleClickRandom = async () => {
+    await setRandomMenu(locations[randomNumber]);
   };
 
   useEffect(() => {
-    _.isUndefined(randomMenu) &&
-      locations.length > 0 &&
-      setRandomMenu(locations[randomNumber]);
-  }, [locations, randomMenu]);
+    locations.length > 0 && setRandomMenu(locations[randomNumber]);
+  }, [locations]);
 
   return (
     <div>
@@ -58,7 +56,9 @@ const RandomMenuPage = ({ setSelectedPage }: any) => {
         <button
           className="button-28 "
           role="button"
-          onClick={handleClickRandom}
+          onClick={() => {
+            handleClickRandom();
+          }}
         >
           다른 메뉴
         </button>

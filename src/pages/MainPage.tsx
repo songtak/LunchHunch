@@ -57,6 +57,8 @@ const MainPage = ({ setSelectedPage }: any) => {
           className="button-28 "
           role="button"
           onClick={() => {
+            // setSelectedPage("list");
+
             alert("준비중");
             // handleClickLocation("/list");
           }}
