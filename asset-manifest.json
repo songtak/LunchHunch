@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.d78e6597.css",
-    "main.js": "/static/js/main.fcd91f3f.js",
-    "static/js/787.d844ba0d.chunk.js": "/static/js/787.d844ba0d.chunk.js",
-    "static/media/Chilgok_lws.ttf": "/static/media/Chilgok_lws.82c2fcd50675624f43ca.ttf",
-    "static/media/yuri.ttf": "/static/media/yuri.f03c3b5c294b4de1ea32.ttf",
-    "static/media/father.ttf": "/static/media/father.8e45ef5199e72ca5b914.ttf",
-    "static/media/cursyger.ttf": "/static/media/cursyger.345df20ac918a50e9a34.ttf",
-    "static/media/Bolderslant.ttf": "/static/media/Bolderslant.8845cf92f884cfdc6e98.ttf",
-    "static/media/YouDense-Glass-BlowBold.ttf": "/static/media/YouDense-Glass-BlowBold.14a4ce0388d221deb71a.ttf",
-    "static/media/StayPuft.woff": "/static/media/StayPuft.29ee64929efa142efc08.woff",
-    "static/media/LCMogi-A.ttf": "/static/media/LCMogi-A.c9d38faf9f88b1215869.ttf",
-    "static/media/Hugest.woff": "/static/media/Hugest.091e7add36c1877c9cb4.woff",
-    "static/media/rondula.ttf": "/static/media/rondula.b1ed230a00dd45ad3f45.ttf",
-    "index.html": "/index.html",
-    "main.d78e6597.css.map": "/static/css/main.d78e6597.css.map",
-    "main.fcd91f3f.js.map": "/static/js/main.fcd91f3f.js.map",
-    "787.d844ba0d.chunk.js.map": "/static/js/787.d844ba0d.chunk.js.map"
+    "main.css": "/LunchHunch/static/css/main.d78e6597.css",
+    "main.js": "/LunchHunch/static/js/main.bffdb81c.js",
+    "static/js/787.d844ba0d.chunk.js": "/LunchHunch/static/js/787.d844ba0d.chunk.js",
+    "static/media/Chilgok_lws.ttf": "/LunchHunch/static/media/Chilgok_lws.82c2fcd50675624f43ca.ttf",
+    "static/media/yuri.ttf": "/LunchHunch/static/media/yuri.f03c3b5c294b4de1ea32.ttf",
+    "static/media/father.ttf": "/LunchHunch/static/media/father.8e45ef5199e72ca5b914.ttf",
+    "static/media/cursyger.ttf": "/LunchHunch/static/media/cursyger.345df20ac918a50e9a34.ttf",
+    "static/media/Bolderslant.ttf": "/LunchHunch/static/media/Bolderslant.8845cf92f884cfdc6e98.ttf",
+    "static/media/YouDense-Glass-BlowBold.ttf": "/LunchHunch/static/media/YouDense-Glass-BlowBold.14a4ce0388d221deb71a.ttf",
+    "static/media/StayPuft.woff": "/LunchHunch/static/media/StayPuft.29ee64929efa142efc08.woff",
+    "static/media/LCMogi-A.ttf": "/LunchHunch/static/media/LCMogi-A.c9d38faf9f88b1215869.ttf",
+    "static/media/Hugest.woff": "/LunchHunch/static/media/Hugest.091e7add36c1877c9cb4.woff",
+    "static/media/rondula.ttf": "/LunchHunch/static/media/rondula.b1ed230a00dd45ad3f45.ttf",
+    "index.html": "/LunchHunch/index.html",
+    "main.d78e6597.css.map": "/LunchHunch/static/css/main.d78e6597.css.map",
+    "main.bffdb81c.js.map": "/LunchHunch/static/js/main.bffdb81c.js.map",
+    "787.d844ba0d.chunk.js.map": "/LunchHunch/static/js/787.d844ba0d.chunk.js.map"
   },
-  "entrypoints": ["static/css/main.d78e6597.css", "static/js/main.fcd91f3f.js"]
+  "entrypoints": [
+    "static/css/main.d78e6597.css",
+    "static/js/main.bffdb81c.js"
+  ]
 }
