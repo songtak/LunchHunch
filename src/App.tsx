@@ -13,6 +13,7 @@ import EncryptedJson from "./utils/EncryptedJson";
 import AdSense from "./containers/AdSense";
 import { MainRoutes } from "./routes/MainRoutes";
 import * as Pages from "../src/pages";
+import LayoutComponent from "./components/common/LayoutComponent";
 
 const App = () => {
   const [selectedPage, setSelectedPage] = useState<
@@ -30,7 +31,7 @@ const App = () => {
 
   return (
     <ErrorBoundary>
-      <div className="App">
+      {/* <div className="App">
         <div
           className={`${
             selectedPage === "main" ? "title_wrapper_main" : ""
@@ -78,14 +79,14 @@ const App = () => {
             <div>songtak@2023.10.24</div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      {/* <HashRouter>
+      <HashRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/*" element={<MainRouter />} />
         </Routes>
-      </HashRouter> */}
+      </HashRouter>
     </ErrorBoundary>
   );
 };

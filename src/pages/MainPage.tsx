@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import _ from "lodash";
 import "animate.css";
 import MarkerMap from "../containers/MarkerMap";
@@ -7,8 +8,11 @@ import SingleMarkerMap from "../containers/SingleMarkerMap";
 
 // animate__headShake
 const MainPage = ({ setSelectedPage }: any) => {
+  const navigate = useNavigate();
+
   const handleClickLocation = (url: string) => {
-    window.location.href = url;
+    // window.location.href = url;
+    navigate(url);
   };
 
   return (
@@ -33,8 +37,8 @@ const MainPage = ({ setSelectedPage }: any) => {
           className="button-28 "
           role="button"
           onClick={() => {
-            setSelectedPage("random");
-            // handleClickLocation("/#random");
+            // setSelectedPage("random");
+            handleClickLocation("/random");
           }}
         >
           랜덤
@@ -45,8 +49,8 @@ const MainPage = ({ setSelectedPage }: any) => {
           className="button-28 "
           role="button"
           onClick={() => {
-            setSelectedPage("map");
-            // handleClickLocation("/#map");
+            // setSelectedPage("map");
+            handleClickLocation("/map");
           }}
         >
           지도
