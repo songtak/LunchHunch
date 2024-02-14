@@ -10,7 +10,7 @@ const MapPage = () => {
           className="button-27"
           role="button"
           onClick={() => {
-            window.location.href = "/";
+            window.location.href = "/LunchHunch";
           }}
         >
           Lunch Hunch
