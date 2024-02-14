@@ -71,7 +71,7 @@ const RandomMenuPage = () => {
           className="button-27"
           role="button"
           onClick={() => {
-            window.location.href = "/LunchHunch";
+            window.location.href = "/";
           }}
         >
           Lunch Hunch
