@@ -30,17 +30,6 @@ const RandomNumberPage = () => {
       }
     }
     setWinners(numbers);
-    // displayWinnersWithAnimation(numbers);
-  };
-
-  const displayWinnersWithAnimation = (winners: number[]) => {
-    let delay = 0;
-    winners.forEach((winner, index) => {
-      setTimeout(() => {
-        setWinners((prevWinners) => [...prevWinners, winner]);
-      }, delay);
-      delay += 2000; // 2초 간격으로 winner를 표시
-    });
   };
 
   return (
