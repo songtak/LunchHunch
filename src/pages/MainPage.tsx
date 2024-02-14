@@ -62,6 +62,18 @@ const MainPage = ({ setSelectedPage }: any) => {
           role="button"
           onClick={() => {
             // setSelectedPage("list");
+            handleClickLocation("/games");
+          }}
+        >
+          커피 내기
+        </button>
+      </div>
+      {/* <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
+        <button
+          className="button-28 "
+          role="button"
+          onClick={() => {
+            // setSelectedPage("list");
 
             alert("준비중");
             // handleClickLocation("/list");
@@ -69,7 +81,7 @@ const MainPage = ({ setSelectedPage }: any) => {
         >
           목록
         </button>
-      </div>
+      </div> */}
 
       {/* <button className="button-27" role="button">Button 27</button> */}
 

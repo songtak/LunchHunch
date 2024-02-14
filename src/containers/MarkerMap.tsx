@@ -111,8 +111,8 @@ const MarkerMap = () => {
       const mapOptions = {
         /** ts-ignore */
         center: new naver.maps.LatLng(
-          locations[0]?.location.split(", ")[0],
-          locations[0].location.split(", ")[1]
+          locations[0]?.coordinate.split(", ")[0],
+          locations[0].coordinate.split(", ")[1]
         ),
         zoom: 17,
         zoomControl: true,
@@ -124,8 +124,8 @@ const MarkerMap = () => {
       locations.forEach((location: any) => {
         const marker = new naver.maps.Marker({
           position: new naver.maps.LatLng(
-            location.location.split(", ")[0],
-            location.location.split(", ")[1]
+            location.coordinate.split(", ")[0],
+            location.coordinate.split(", ")[1]
           ),
           map,
         });

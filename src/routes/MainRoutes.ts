@@ -22,4 +22,14 @@ export const MainRoutes: RoutePropInterface[] = [
     path: "/map",
     element: Pages.MapPage,
   },
+  {
+    title: "games",
+    path: "/games",
+    element: Pages.MiniGameListPage,
+  },
+  {
+    title: "games/random-number",
+    path: "/random-number",
+    element: Pages.RandomNumberPage,
+  },
 ];

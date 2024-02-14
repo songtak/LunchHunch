@@ -13,7 +13,7 @@ const MapPage = () => {
             window.location.href = "/";
           }}
         >
-          Lunch Bunch
+          Lunch Hunch
         </button>
       </div>
     </div>

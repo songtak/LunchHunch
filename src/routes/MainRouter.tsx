@@ -47,7 +47,7 @@ const MainRouter = () => {
               ( 추후 다양한 기능 업데이트 예정입니다. )
             </div>
           </div>
-          <div>songtak@2023.10.24</div>
+          <div>songtak@2024.02.14</div>
         </div>
       </div>
     </div>

@@ -6,13 +6,15 @@ const SingleMarkerMap = ({ selectedMark }: any) => {
   /** @ts-ignore */
   const { naver } = window;
 
+  console.log("selectedMark", selectedMark);
+
   useEffect(() => {
     if (!mapElement.current || !naver || !selectedMark) return;
 
     const mapOptions = {
       center: new naver.maps.LatLng(
-        selectedMark.location.split(", ")[0],
-        selectedMark.location.split(", ")[1]
+        selectedMark?.coordinate.split(", ")[0],
+        selectedMark?.coordinate.split(", ")[1]
       ),
       zoom: 17,
       zoomControl: true,
@@ -22,8 +24,8 @@ const SingleMarkerMap = ({ selectedMark }: any) => {
 
     const marker = new naver.maps.Marker({
       position: new naver.maps.LatLng(
-        selectedMark.location.split(", ")[0],
-        selectedMark.location.split(", ")[1]
+        selectedMark.coordinate.split(", ")[0],
+        selectedMark.coordinate.split(", ")[1]
       ),
       map,
     });

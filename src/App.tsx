@@ -82,6 +82,7 @@ const App = () => {
       </div> */}
 
       <HashRouter>
+        {/* <>{EncryptedJson()}</> */}
         <ScrollToTop />
         <Routes>
           <Route path="/*" element={<MainRouter />} />
