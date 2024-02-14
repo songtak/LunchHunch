@@ -5,7 +5,7 @@ import MarkerMap from "../containers/MarkerMap";
 import useMenuList from "../libs/useMenuList";
 import SingleMarkerMap from "../containers/SingleMarkerMap";
 
-const RandomMenuPage = ({ setSelectedPage }: any) => {
+const RandomMenuPage = () => {
   const locations = useMenuList();
   const [randomMenu, setRandomMenu] = useState<any>();
 
@@ -18,6 +18,9 @@ const RandomMenuPage = ({ setSelectedPage }: any) => {
   useEffect(() => {
     locations.length > 0 && setRandomMenu(locations[randomNumber]);
   }, [locations]);
+
+  console.log("locations", locations);
+  console.log("randomMenu", randomMenu);
 
   return (
     <div>
@@ -68,8 +71,7 @@ const RandomMenuPage = ({ setSelectedPage }: any) => {
           className="button-27"
           role="button"
           onClick={() => {
-            setSelectedPage("main");
-            // window.location.href = "/";
+            window.location.href = "/";
           }}
         >
           Lunch Bunch

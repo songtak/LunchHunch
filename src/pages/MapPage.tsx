@@ -1,7 +1,7 @@
 import React from "react";
 import MarkerMap from "../containers/MarkerMap";
 
-const MapPage = ({ setSelectedPage }: any) => {
+const MapPage = () => {
   return (
     <div>
       <MarkerMap />
@@ -10,9 +10,7 @@ const MapPage = ({ setSelectedPage }: any) => {
           className="button-27"
           role="button"
           onClick={() => {
-            setSelectedPage("main");
-
-            // window.location.href = "/";
+            window.location.href = "/";
           }}
         >
           Lunch Bunch
