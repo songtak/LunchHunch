@@ -10,10 +10,17 @@ const MainRouter = () => {
   const { pathname } = useLocation();
   const [initialized, setInitialized] = useState(false);
 
+  console.log("process.env.REACT_APP_PROD", process.env.REACT_APP_PROD);
+  console.log(
+    "process.env.REACT_APP_GOOGLE_ANALYTICS_ID",
+    process.env.REACT_APP_GOOGLE_ANALYTICS_ID
+  );
+
   useEffect(() => {
     // if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID) {
     //   ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
     // }
+    console.log("out");
     if (
       process.env.REACT_APP_PROD &&
       process.env.REACT_APP_GOOGLE_ANALYTICS_ID
@@ -21,13 +28,14 @@ const MainRouter = () => {
       /** @ts-ignore */
       ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
       setInitialized(true);
+      console.log("in");
     }
-  }, [process.env.REACT_APP_GOOGLE_ANALYTICS_ID]);
+  }, [process.env.REACT_APP_GOOGLE_ANALYTICS_ID, process.env.REACT_APP_PROD]);
 
   useEffect(() => {
     if (initialized) {
       ReactGA.set({ page: pathname });
-      ReactGA.send("pageview");
+      ReactGA.send(`${pathname}`);
     }
   }, [initialized, pathname]);
 
