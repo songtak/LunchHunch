@@ -84,7 +84,7 @@ code {
 }
 
 .css-6hp17o-MuiList-root-MuiMenu-list {
-  max-height: 200px;
+  max-height: 200px !important;
 }
 
 .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
