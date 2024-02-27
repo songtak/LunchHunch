@@ -126,7 +126,7 @@ const RandomNumberPage = () => {
           </div>
           <div className="KoddiUDOnGothic-Regular mt_30">
             <button
-              className="button-27"
+              className="button-27 FuturaBoldItalic"
               role="button"
               onClick={() => {
                 window.location.href = "/";

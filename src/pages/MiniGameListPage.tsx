@@ -12,19 +12,19 @@ const MiniGameListPage = () => {
     <div>
       <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
         <button
-          className="button-28 "
+          className="button-28 futura"
           role="button"
           onClick={() => {
             // setSelectedPage("list");
             handleClickLocation("/random-number");
           }}
         >
-          랜덤 번호
+          Random Number
         </button>
       </div>
       <div className="KoddiUDOnGothic-Regular mt_30">
         <button
-          className="button-27"
+          className="button-27 FuturaBoldItalic"
           role="button"
           onClick={() => {
             window.location.href = "/";

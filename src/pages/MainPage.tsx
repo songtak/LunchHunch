@@ -18,54 +18,53 @@ const MainPage = ({ setSelectedPage }: any) => {
   return (
     <div>
       <div className="main_page_content">
-        <div className="title_sub KoddiUDOnGothic-Regular">
-          <div className="animate__animated animate__pulse">
+        <div className="title_sub KoddiUDOnGothic-Regular futuralightbt">
+          {/* <div className="animate__animated animate__pulse">
             <div>한남동 직장인</div>
             <div>점심메뉴 랜덤 추천 사이트</div>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             style={{ marginTop: "24px", fontSize: 16 }}
             className="animate__animated animate__pulse"
           >
             <div>* 한남동 맛집 아님, 단순 직장인 점심메뉴 모음</div>
-            <div> * pc에서 보는걸 추천드립니다.</div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
         <button
-          className="button-28 "
+          className="button-28 futura"
           role="button"
           onClick={() => {
             // setSelectedPage("random");
             handleClickLocation("/random");
           }}
         >
-          랜덤
+          Random
         </button>
       </div>
       <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
         <button
-          className="button-28 "
+          className="button-28 futura"
           role="button"
           onClick={() => {
             // setSelectedPage("map");
             handleClickLocation("/map");
           }}
         >
-          지도
+          Map
         </button>
       </div>
       <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
         <button
-          className="button-28 "
+          className="button-28 futura"
           role="button"
           onClick={() => {
             // setSelectedPage("list");
             handleClickLocation("/games");
           }}
         >
-          커피 내기
+          ☕️
         </button>
       </div>
       {/* <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">

@@ -10,44 +10,75 @@ const MainRouter = () => {
 
   return (
     <div className="App">
-      <div
-        className={`${pathname === "/" ? "title_wrapper_main" : ""} button`}
-        onClick={() => {
-          window.location.href = "/";
-        }}
-      >
-        <div className="title">
-          <div className="animate__animated animate__fadeInDown Hugest">
-            Lunch Hunch
-          </div>
-        </div>
-        <div className="title_sub animate__animated animate__fadeInUp Hugest">
-          .demo
-        </div>
-      </div>
-      <div>
-        <Routes>
-          {MainRoutes.map((item: RoutePropInterface) => {
-            const Element = item.element;
-            return (
-              <Route key={item.title} path={item.path} element={<Element />} />
-            );
-          })}
-          <Route path="*" element={<div>404에러</div>} />
-        </Routes>
-      </div>
-      <div className="footer " style={{ marginTop: 40 }}>
-        <div className="animate__animated animate__fadeInUp KoddiUDOnGothic-Regular">
-          <div style={{ paddingBottom: "24px" }}>
-            <div>추가하고 싶은 점심 여기로 디엠주세요.</div>
-            <a href="https://instagram.com/sn9tk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
-              👉🔮👈
-            </a>
-            <div style={{ marginTop: 10, fontSize: 12 }}>
-              ( 추후 다양한 기능 업데이트 예정입니다. )
+      <div className="main_wrapper">
+        <div className="main_content">
+          <div
+            className={`${pathname === "/" ? "title_wrapper_main" : ""} button`}
+            onClick={() => {
+              window.location.href = "/";
+            }}
+          >
+            <div className="title">
+              {pathname === "/" && (
+                <div
+                  className="animate__animated animate__fadeInDown FuturaBoldItalic"
+                  style={{ marginTop: "80px" }}
+                >
+                  <div>Lunch</div>
+                  <div className="wcenter">
+                    <span className="logo_1 w40 h40" />
+                  </div>
+                  <div>Hunch</div>
+                </div>
+              )}
+              {pathname !== "/" && (
+                <div
+                  className="animate__animated animate__fadeInDown FuturaBoldItalic"
+                  style={{ fontSize: "40px", marginTop: 36, marginBottom: 24 }}
+                >
+                  <span>Lunch</span>
+                  <span
+                    className="logo_1 w40 h40"
+                    style={{
+                      fontSize: "40px",
+                      marginRight: 8,
+                      marginLeft: 8,
+                      paddingTop: 0,
+                    }}
+                  />
+                  <span>Hunch</span>
+                </div>
+              )}
             </div>
           </div>
-          <div>songtak@2024.02.14</div>
+          <div>
+            <Routes>
+              {MainRoutes.map((item: RoutePropInterface) => {
+                const Element = item.element;
+                return (
+                  <Route
+                    key={item.title}
+                    path={item.path}
+                    element={<Element />}
+                  />
+                );
+              })}
+              <Route path="*" element={<div>404에러</div>} />
+            </Routes>
+          </div>
+          <div className="footer " style={{ marginTop: 40 }}>
+            <div className="animate__animated animate__fadeInUp KoddiUDOnGothic-Regular">
+              {/* <div style={{ paddingBottom: "24px" }}></div> */}
+              <div
+                className="futuralightbt"
+                onClick={() => {
+                  window.location.href = "https://instagram.com/sn9tk";
+                }}
+              >
+                songtak
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

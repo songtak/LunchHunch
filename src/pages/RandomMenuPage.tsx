@@ -26,7 +26,7 @@ const RandomMenuPage = () => {
         {/* <div className="menu_title ">여긴 어떤가요?</div> */}
         {!_.isUndefined(randomMenu) && (
           <div>
-            <div className="menu_title">{`< ${randomMenu.name} >`}</div>
+            <div className="menu_title">{`~ ${randomMenu.name} ~`}</div>
             <SingleMarkerMap selectedMark={randomMenu} />
             <div className="menu_content" style={{ marginTop: "32px" }}>
               운영 시간:
@@ -65,7 +65,7 @@ const RandomMenuPage = () => {
       </div>
       <div className="KoddiUDOnGothic-Regular mt_30">
         <button
-          className="button-27"
+          className="button-27 FuturaBoldItalic"
           role="button"
           onClick={() => {
             window.location.href = "/";

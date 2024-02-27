@@ -1,9 +1,9 @@
 @media screen and (max-width: 1023px) {
   .App {
     text-align: center;
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
     overflow: visible;
     /* height: calc(100% - 60px);
     padding-top: 40px;
@@ -15,27 +15,39 @@
     /* background-color: rgb(250, 255, 238); */
     min-height: 100%;
     /* flex 컨테이너 설정 */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: floralwhite;
   }
   .main_page_content {
     margin-top: 20px;
   }
 
+  .main_wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .main_content {
+  }
+
   .title_wrapper_main {
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
 
   .title {
-    font-size: 60px;
+    font-size: 80px;
     padding-bottom: 3px;
     /* width: 730px; */
     text-align: center;
   }
   .title_sub {
     font-size: 24px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     /* width: 730px; */
     text-align: center;
   }
