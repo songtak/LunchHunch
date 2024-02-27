@@ -1,12 +1,35 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import _ from "lodash";
+import ReactGA from "react-ga4";
 
 import { RoutePropInterface } from "../interfaces/commonInterface";
 import { MainRoutes } from "./MainRoutes";
 
 const MainRouter = () => {
   const { pathname } = useLocation();
+  const [initialized, setInitialized] = useState(false);
+
+  useEffect(() => {
+    // if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID) {
+    //   ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+    // }
+    if (
+      process.env.REACT_APP_PROD &&
+      process.env.REACT_APP_GOOGLE_ANALYTICS_ID
+    ) {
+      /** @ts-ignore */
+      ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+      setInitialized(true);
+    }
+  }, [process.env.REACT_APP_GOOGLE_ANALYTICS_ID]);
+
+  useEffect(() => {
+    if (initialized) {
+      ReactGA.set({ page: pathname });
+      ReactGA.send("pageview");
+    }
+  }, [initialized, pathname]);
 
   return (
     <div className="App">
@@ -26,7 +49,7 @@ const MainRouter = () => {
                 >
                   <div>Lunch</div>
                   <div className="wcenter">
-                    <span className="logo_1 w40 h40" />
+                    <span className="logo_1 w60 h60" />
                   </div>
                   <div>Hunch</div>
                 </div>
