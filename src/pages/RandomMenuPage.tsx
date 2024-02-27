@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import _ from "lodash";
 import "animate.css";
-import MarkerMap from "../containers/MarkerMap";
+
 import useMenuList from "../libs/useMenuList";
 import SingleMarkerMap from "../containers/SingleMarkerMap";
 
@@ -18,9 +18,6 @@ const RandomMenuPage = () => {
   useEffect(() => {
     locations.length > 0 && setRandomMenu(locations[randomNumber]);
   }, [locations]);
-
-  console.log("locations", locations);
-  console.log("randomMenu", randomMenu);
 
   return (
     <div>

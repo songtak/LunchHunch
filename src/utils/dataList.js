@@ -8,7 +8,7 @@ const list1 = [
     openhour: "24시",
     closeDay: "연중무휴",
     address: "서울 용산구 한남동 대사관로47",
-    coordinate: "37.5336579, 127.0034269",
+    location: "37.5336579, 127.0034269",
     people: "1,8",
   },
   {
@@ -20,7 +20,7 @@ const list1 = [
     openhour: "-",
     closeDay: "-",
     address: "서울 용산구 대사관로5길 36",
-    coordinate: "37.5357780, 127.0001383",
+    location: "37.5357780, 127.0001383",
     people: "-,4",
   },
   {
@@ -32,7 +32,7 @@ const list1 = [
     openhour: "11:00,14:20",
     closeDay: "일요일",
     address: "서울 용산구 대사관로31길 12 1층",
-    coordinate: "37.5338736, 127.0059751",
+    location: "37.5338736, 127.0059751",
     people: "-,8",
   },
   {
@@ -44,7 +44,7 @@ const list1 = [
     openhour: "11:00,22:00",
     closeDay: "일요일",
     address: "서울 용산구 대사관로 58",
-    coordinate: "37.5332196, 127.0045887",
+    location: "37.5332196, 127.0045887",
     people: "1,8",
   },
   {
@@ -56,7 +56,7 @@ const list1 = [
     openhour: "11:00,15:00",
     closeDay: "-",
     address: "서울 용산구 대사관로30길 17",
-    coordinate: "37.5324558, 127.0056532",
+    location: "37.5324558, 127.0056532",
     people: "1,8",
   },
   {
@@ -68,7 +68,7 @@ const list1 = [
     openhour: "11:30,22:00",
     closeDay: "1,3,5 월요일",
     address: "서울 용산구 이태원로 245 2층",
-    coordinate: "37.5369017, 127.0001350",
+    location: "37.5369017, 127.0001350",
     people: "2,8",
   },
   {
@@ -80,7 +80,7 @@ const list1 = [
     openhour: "11:00,14:00",
     closeDay: "월요일",
     address: "서울 용산구 대사관로30길 6 언양생고기",
-    coordinate: "37.5329998, 127.0053957",
+    location: "37.5329998, 127.0053957",
     people: "-,8",
   },
   {
@@ -92,7 +92,7 @@ const list1 = [
     openhour: "08:00,15:00",
     closeDay: "-",
     address: "서울 용산구 독서당로 65-7",
-    coordinate: "37.5339517, 127.0080709",
+    location: "37.5339517, 127.0080709",
     people: "-,8",
   },
   {
@@ -104,7 +104,7 @@ const list1 = [
     openhour: "10:00,20:00",
     closeDay: "-",
     address: "서울 용산구 대사관로 56 1층 세브레스 약국 옆",
-    coordinate: "37.5332196, 127.0045887",
+    location: "37.5332196, 127.0045887",
     people: "1,4",
   },
   {
@@ -116,7 +116,7 @@ const list1 = [
     openhour: "09:30:21:00",
     closeDay: "월요일",
     address: "서울 용산구 대사관로 45-1",
-    coordinate: "37.5336710, 127.0032641",
+    location: "37.5336710, 127.0032641",
     people: "1,8",
   },
   {
@@ -128,7 +128,7 @@ const list1 = [
     openhour: "11:00,14:30",
     closeDay: "월요일",
     address: "서울 용산구 이태원로55가길 26-1",
-    coordinate: "37.5373595, 126.9998096",
+    location: "37.5373595, 126.9998096",
     people: "1,8",
   },
   {
@@ -140,7 +140,7 @@ const list1 = [
     openhour: "10:40,21:00",
     closeDay: "일요일",
     address: "서울 용산구 대사관로 52 202호",
-    coordinate: "37.5332825, 127.0038542",
+    location: "37.5332825, 127.0038542",
     people: "1,8",
   },
   {
@@ -151,7 +151,7 @@ const list1 = [
     url: "https://naver.me/5KZOOxW4",
     openhour: "10:30,20:30",
     address: "서울 용산구 이태원로 235 시골밥상",
-    coordinate: "37.5361437, 126.9994787",
+    location: "37.5361437, 126.9994787",
     people: "-,8",
   },
   {
@@ -162,7 +162,7 @@ const list1 = [
     url: "https://naver.me/5atz98Js",
     openhour: "10:00,04:00",
     address: "서울 용산구 보광로60길 22 지1, 1층",
-    coordinate: "37.5338797, 126.9954334",
+    location: "37.5338797, 126.9954334",
     people: "1,8",
   },
   {
@@ -174,7 +174,7 @@ const list1 = [
     openhour: "-",
     closeDay: "-",
     address: "서울 용산구 대사관로24길 12 금강빌딩",
-    coordinate: "37.5328320, 127.0046657",
+    location: "37.5328320, 127.0046657",
     people: "1,8",
   },
   {
@@ -185,7 +185,7 @@ const list1 = [
     url: "https://naver.me/xIhXPoAp",
     openhour: "11:30,21:00",
     address: "서울 용산구 이태원로54가길 26 지1층",
-    coordinate: "37.5367818, 127.0013438",
+    location: "37.5367818, 127.0013438",
     people: "1,8",
   },
   {
@@ -196,7 +196,7 @@ const list1 = [
     url: "https://naver.me/xAtWh4bX",
     openhour: "24시",
     address: "서울 용산구 대사관로 73 1층",
-    coordinate: "37.5334412, 127.0061584",
+    location: "37.5334412, 127.0061584",
     people: "1,8",
   },
   {
@@ -207,7 +207,7 @@ const list1 = [
     url: "https://naver.me/FCb4iYgk",
     openhour: "10:00,05:00",
     address: "서울 용산구 대사관로 72 제일빌딩 2층",
-    coordinate: "37.5330479, 127.0059378",
+    location: "37.5330479, 127.0059378",
     people: "1,8",
   },
   {
@@ -218,7 +218,7 @@ const list1 = [
     url: "https://naver.me/F8KnEWMe",
     openhour: "10:00,23:30",
     address: "서울 용산구 대사관로30길 4 1층 목포해물탕",
-    coordinate: "37.5331077, 127.0054782",
+    location: "37.5331077, 127.0054782",
     people: "-,-",
   },
   {
@@ -230,7 +230,7 @@ const list1 = [
     openhour: "11:00,03:00",
     closeDay: "월요일",
     address: "서울 용산구 대사관로34길 21 영풍빌딩1층",
-    coordinate: "37.5322276, 127.0060932",
+    location: "37.5322276, 127.0060932",
     people: "-,-",
   },
   {
@@ -241,7 +241,7 @@ const list1 = [
     url: "https://naver.me/IxD7v5lK",
     openhour: "24시",
     address: "서울 용산구 대사관로34길 9",
-    coordinate: "37.5327688, 127.0063388",
+    location: "37.5327688, 127.0063388",
     people: "2,8",
   },
   {
@@ -253,7 +253,7 @@ const list1 = [
     openhour: "-",
     closeDay: "-",
     address: "서울 용산구 대사관로30가길 6",
-    coordinate: "37.5322654, 127.0052136",
+    location: "37.5322654, 127.0052136",
     people: "-,-",
   },
   {
@@ -265,7 +265,7 @@ const list1 = [
     openhour: "11:30",
     closeDay: "토요일, 일요일",
     address: "서울 용산구 이태원로54길 52 2층 이층식당",
-    coordinate: "37.536169, 127.001210",
+    location: "37.536169, 127.001210",
     people: "1,-",
   },
   {
@@ -276,7 +276,7 @@ const list1 = [
     url: "https://naver.me/GkK0jnai",
     openhour: "-",
     address: "서울 용산구 이태원로 238-1",
-    coordinate: "37.535950, 126.999965",
+    location: "37.535950, 126.999965",
     people: "1,-",
   },
   {
@@ -288,7 +288,7 @@ const list1 = [
     openhour: "11:30,22:00",
     closeDay: "-",
     address: "서울 용산구 독서당로 46 한남아이파크 지하 1층",
-    coordinate: "37.532330, 127.007057",
+    location: "37.532330, 127.007057",
     people: "1,4",
   },
 ];
@@ -303,7 +303,7 @@ const list2 = [
     openhour: "11:00,15:00",
     closeDay: "일요일",
     address: "서울 용산구 이태원로 227",
-    coordinate: "37.5356651, 126.9988257",
+    location: "37.5356651, 126.9988257",
     people: "1,8",
   },
   {
@@ -314,7 +314,7 @@ const list2 = [
     url: "https://naver.me/xDs6TPws",
     openhour: "11:30,15:00",
     address: "서울 용산구 이태원로54길 58-5 지층",
-    coordinate: "37.5357176, 127.0008525",
+    location: "37.5357176, 127.0008525",
     people: "1,4",
   },
   {
@@ -325,7 +325,7 @@ const list2 = [
     url: "https://naver.me/xyUjUZws",
     openhour: "11:00,02:00",
     address: "서울 용산구 이태원로55가길 18",
-    coordinate: "37.5376228, 127.0001678",
+    location: "37.5376228, 127.0001678",
     people: "1,8",
   },
   {
@@ -336,7 +336,7 @@ const list2 = [
     url: "https://naver.me/FWJPLZTf",
     openhour: "11:00,05:00",
     address: "서울 용산구 이태원로 208 2층",
-    coordinate: "37.5345213, 126.9971157",
+    location: "37.5345213, 126.9971157",
     people: "1,8",
   },
   {
@@ -348,7 +348,7 @@ const list2 = [
     openhour: "10:30,20:30",
     closeDay: "토요일, 일요일",
     address: "서울 용산구 대사관로24길 6",
-    coordinate: "37.5331465, 127.0043295",
+    location: "37.5331465, 127.0043295",
     people: "1,4",
   },
   {
@@ -359,7 +359,7 @@ const list2 = [
     url: "https://naver.me/FaSPX7qe",
     openhour: "11:30,15:00",
     address: "서울 용산구 이태원로54길 58-18 1층",
-    coordinate: "37.5358315, 127.0007770",
+    location: "37.5358315, 127.0007770",
     people: "1,4",
   },
   {
@@ -370,7 +370,7 @@ const list2 = [
     url: "https://naver.me/GxRZ4bnG",
     openhour: "11:00,14:30",
     address: "서울 용산구 대사관로 35 사운즈 한남 1층",
-    coordinate: "37.5337671, 127.0020666",
+    location: "37.5337671, 127.0020666",
     people: "1,8",
   },
   {
@@ -382,7 +382,7 @@ const list2 = [
     openhour: "11:00,21:00",
     closeDay: "-",
     address: "서울 용산구 대사관로 48 지하1층",
-    coordinate: "37.533405, 127.003337",
+    location: "37.533405, 127.003337",
   },
   {
     category: "일식",
@@ -393,7 +393,7 @@ const list2 = [
     openhour: "10:00,22:00",
     closeDay: "일요일",
     address: "서울 용산구 대사관로31길 24",
-    coordinate: "37.534273, 127.005992",
+    location: "37.534273, 127.005992",
     people: "1,4",
   },
   {
@@ -405,7 +405,7 @@ const list2 = [
     openhour: "11:30,15:00",
     closeDay: "일요일",
     address: "서울 용산구 이태원로 238 제2호 지하 1층",
-    coordinate: "37.5359522, 126.9999555",
+    location: "37.5359522, 126.9999555",
     people: "1,8",
   },
   {
@@ -416,7 +416,7 @@ const list2 = [
     url: "https://naver.me/G14FsVcX",
     openhour: "11:00,15:00",
     address: "서울 용산구 이태원로54길 5-5",
-    coordinate: "37.5379953, 127.0021945",
+    location: "37.5379953, 127.0021945",
     people: "1,-",
   },
   {
@@ -427,7 +427,7 @@ const list2 = [
     url: "https://naver.me/xUS4Hy3O",
     openhour: "11:00,21:00",
     address: "서울 용산구 한남대로21길 20 지층",
-    coordinate: "37.5339390, 127.0061442",
+    location: "37.5339390, 127.0061442",
     people: "1,-",
   },
   {
@@ -438,7 +438,7 @@ const list2 = [
     url: "https://naver.me/5wmQ1X5Z",
     openhour: "03:00,21:00",
     address: "서울 용산구 대사관로24길 15 1층",
-    coordinate: "37.5329151, 127.0049865",
+    location: "37.5329151, 127.0049865",
     people: "1,2",
   },
   {
@@ -449,7 +449,7 @@ const list2 = [
     url: "https://naver.me/FuVExff6",
     openhour: "11:00,15:30",
     address: "서울 용산구 이태원로55가길 26-8",
-    coordinate: "37.5375144, 126.9998940",
+    location: "37.5375144, 126.9998940",
     people: "1,4",
   },
   {
@@ -461,7 +461,7 @@ const list2 = [
     openhour: "11:30,21:15",
     closeDay: "월요일",
     address: "서울 용산구 이태원로55가길 28",
-    coordinate: "37.5372695, 126.9998110",
+    location: "37.5372695, 126.9998110",
     people: "-,4",
   },
   {
@@ -472,7 +472,7 @@ const list2 = [
     url: "https://naver.me/56IDrl3V",
     openhour: "12:00,22:00",
     address: "서울 용산구 이태원로26길 26 2층",
-    coordinate: "37.5333518, 126.9935261",
+    location: "37.5333518, 126.9935261",
     people: "1,4",
   },
   {
@@ -483,7 +483,7 @@ const list2 = [
     url: "https://naver.me/FTOw8ApZ",
     openhour: "11:30,21:30",
     address: "서울 용산구 이태원로42길 36 지하1층",
-    coordinate: "37.5361620, 127.0005705",
+    location: "37.5361620, 127.0005705",
     people: "1,8",
   },
   {
@@ -495,7 +495,7 @@ const list2 = [
     openhour: "11:00,22:00",
     closeDay: "-",
     address: "서울 용산구 독서당로 46 1층 107호",
-    coordinate: "37.532331, 127.007056",
+    location: "37.532331, 127.007056",
     people: "1,4",
   },
 ];
@@ -509,7 +509,7 @@ const list3 = [
     url: "https://naver.me/GfaMdCKT",
     openhour: "11:00,21:00",
     address: "서울 용산구 대사관로5길 12 1층 다운타우너 한남점",
-    coordinate: "37.5348321, 127.0008554",
+    location: "37.5348321, 127.0008554",
     people: "1,8",
   },
   {
@@ -520,7 +520,7 @@ const list3 = [
     url: "https://naver.me/GPr36Qk4",
     openhour: "10:30,23:30",
     address: "서울 용산구 대사관로 62",
-    coordinate: "37.5331902, 127.0049506",
+    location: "37.5331902, 127.0049506",
     people: "1,8",
   },
   {
@@ -531,7 +531,7 @@ const list3 = [
     url: "https://naver.me/xvjvul0j",
     openhour: "11:30,15:00",
     address: "서울 용산구 이태원로 254 지하 2층",
-    coordinate: "37.5372363, 127.0011753",
+    location: "37.5372363, 127.0011753",
     people: "1,4",
   },
   {
@@ -542,7 +542,7 @@ const list3 = [
     url: "https://naver.me/Fgivx3m5",
     openhour: "11:30,23:00",
     address: "서울 용산구 대사관로 20 1층",
-    coordinate: "37.5340748, 127.0005064",
+    location: "37.5340748, 127.0005064",
     people: "1,8",
   },
   {
@@ -553,7 +553,7 @@ const list3 = [
     url: "https://naver.me/xUS4DkRb",
     openhour: "08:00,22:00",
     address: "서울 용산구 대사관로 63 한남치과",
-    coordinate: "37.5335009, 127.0052824",
+    location: "37.5335009, 127.0052824",
     people: "1,8",
   },
   {
@@ -564,7 +564,7 @@ const list3 = [
     url: "https://naver.me/Gp0ynf07",
     openhour: "07:30,22:00",
     address: "서울 용산구 대사관로 64",
-    coordinate: "37.5332055, 127.0051387",
+    location: "37.5332055, 127.0051387",
     people: "-,-",
   },
   {
@@ -576,7 +576,7 @@ const list3 = [
     openhour: "07:30,21:00",
     closeDay: "일요일",
     address: "서울 용산구 대사관로 72 제일빌딩",
-    coordinate: "37.5330479, 127.0059378",
+    location: "37.5330479, 127.0059378",
     people: "1,4",
   },
   {
@@ -588,7 +588,7 @@ const list3 = [
     openhour: "10:00,22:00",
     closeDay: "-",
     address: "서울 용산구 독서당로 46 한남아이파크애비뉴 1층",
-    coordinate: "37.532385, 127.007033",
+    location: "37.532385, 127.007033",
     people: "1,4",
   },
   {
@@ -600,7 +600,7 @@ const list3 = [
     openhour: "-",
     closeDay: "-",
     address: "서울 용산구 대사관로24길 27",
-    coordinate: "37.5325166, 127.0054438",
+    location: "37.5325166, 127.0054438",
     people: "1,4",
   },
   {
@@ -611,7 +611,7 @@ const list3 = [
     url: "https://naver.me/FfMA2yZj",
     openhour: "24시",
     address: "서울 용산구 이태원로 208",
-    coordinate: "37.5345213, 126.9971157",
+    location: "37.5345213, 126.9971157",
     people: "1,4",
   },
   {
@@ -623,7 +623,7 @@ const list3 = [
     openhour: "11:30,14:20",
     closeDay: "월요일",
     address: "서울 용산구 대사관로5길 17 1층",
-    coordinate: "37.5349764, 127.0005666",
+    location: "37.5349764, 127.0005666",
     people: "1,4",
   },
   {
@@ -634,7 +634,7 @@ const list3 = [
     url: "https://naver.me/FNm1fzWs",
     openhour: "10:00,22:00",
     address: "서울 용산구 대사관로 76",
-    coordinate: "37.5330039, 127.0064699",
+    location: "37.5330039, 127.0064699",
     people: "1,4",
   },
   {
@@ -646,7 +646,7 @@ const list3 = [
     openhour: "08:00,21:00",
     closeDay: "일요일",
     address: "서울 용산구 대사관로 76",
-    coordinate: "37.5330039, 127.0064699",
+    location: "37.5330039, 127.0064699",
     people: "1,4",
   },
   {
@@ -658,7 +658,7 @@ const list3 = [
     openhour: "11:30,22:00",
     closeDay: "일요일",
     address: "서울 용산구 대사관로24길 18",
-    coordinate: "37.5326929, 127.0049125",
+    location: "37.5326929, 127.0049125",
     people: "1,4",
   },
   {
@@ -670,7 +670,7 @@ const list3 = [
     openhour: "11:30,21:00",
     closeDay: "일요일",
     address: "서울 용산구 독서당로 65-3",
-    coordinate: "37.533976, 127.007930",
+    location: "37.533976, 127.007930",
     people: "1,2",
   },
   {
@@ -681,7 +681,7 @@ const list3 = [
     url: "https://naver.me/5fnjzzCt",
     openhour: "10:00,21:30",
     address: "서울 용산구 이태원로 189 1층",
-    coordinate: "37.5347514, 126.9950055",
+    location: "37.5347514, 126.9950055",
     people: "1,8",
   },
   {
@@ -692,7 +692,7 @@ const list3 = [
     url: "https://naver.me/GKovUMME",
     openhour: "11:30,22:00",
     address: "서울 용산구 이태원로 192",
-    coordinate: "37.5343561, 126.9953608",
+    location: "37.5343561, 126.9953608",
     people: "1,8",
   },
   {
@@ -703,7 +703,7 @@ const list3 = [
     url: "https://naver.me/5lZCrCZc",
     openhour: "09:00,22:00",
     address: "서울 용산구 대사관로 65 1층월남집",
-    coordinate: "37.5334858, 127.0054590",
+    location: "37.5334858, 127.0054590",
     people: "1,8",
   },
   {
@@ -714,7 +714,7 @@ const list3 = [
     url: "https://naver.me/5bXV9jGC",
     openhour: "10:00,06:00",
     address: "서울 용산구 이태원로 180 스카이하이 지하1층",
-    coordinate: "37.5342642, 126.9942135",
+    location: "37.5342642, 126.9942135",
     people: "1,8",
   },
   {
@@ -725,7 +725,7 @@ const list3 = [
     url: "https://naver.me/Gz517b4F",
     openhour: "10:00,15:00",
     address: "서울 용산구 이태원로42길 36 2층",
-    coordinate: "37.5361620, 127.0005705",
+    location: "37.5361620, 127.0005705",
     people: "1,4",
   },
   {
@@ -735,7 +735,7 @@ const list3 = [
     url: "https://naver.me/xaCSLcwA",
     openhour: "12:00,15:00",
     address: "서울 용산구 한남대로27가길 23 1층",
-    coordinate: "37.5377184, 127.0025759",
+    location: "37.5377184, 127.0025759",
     people: "1,4",
   },
   {
@@ -747,7 +747,7 @@ const list3 = [
     openhour: "11:00,20:00",
     closeDay: "화요일",
     address: "서울 용산구 이태원로 223-5 유니언타운 한남 4F",
-    coordinate: "37.5355977, 126.9983601",
+    location: "37.5355977, 126.9983601",
     people: "1,8",
   },
   {
@@ -759,7 +759,7 @@ const list3 = [
     openhour: "07:30,18:00",
     closeDay: "-",
     address: "서울 용산구 이태원로55가길 49 1층 summerlane",
-    coordinate: "37.536347, 126.999224",
+    location: "37.536347, 126.999224",
     people: "1,4",
   },
   {
@@ -771,7 +771,7 @@ const list3 = [
     openhour: "10:30,21:00",
     closeDay: "-",
     address: "서울 용산구 한남대로27길 66 1층",
-    coordinate: "37.539597, 127.002932",
+    location: "37.539597, 127.002932",
     people: "1,4",
   },
   {
@@ -783,7 +783,7 @@ const list3 = [
     openhour: "11:30, 22:00",
     closeDay: "-",
     address: "서울 용산구 대사관로11길 47 (대사관로 11길 49) 지하 1층",
-    coordinate: "37.535661, 127.001535",
+    location: "37.535661, 127.001535",
     people: "1,4",
   },
   {
@@ -794,7 +794,7 @@ const list3 = [
     url: "https://naver.me/FS6O5UDL",
     openhour: "10:30,20:30",
     address: "서울 용산구 한남대로 91 상가주차장",
-    coordinate: "37.5362883, 127.0034080",
+    location: "37.5362883, 127.0034080",
     people: "1,8",
   },
   {
@@ -805,7 +805,7 @@ const list3 = [
     url: "https://naver.me/G4LYEpDP",
     openhour: "08:10,20:20",
     address: "서울 용산구 대사관로 63 1층 샐러디",
-    coordinate: "37.5335009, 127.0052824",
+    location: "37.5335009, 127.0052824",
     people: "1,8",
   },
   {
@@ -817,7 +817,7 @@ const list3 = [
     openhour: "10:00,22:00",
     closeDay: "-",
     address: "서울 용산구 독서당로 67",
-    coordinate: "37.533825, 127.008116",
+    location: "37.533825, 127.008116",
     people: "1,-",
   },
 ];
