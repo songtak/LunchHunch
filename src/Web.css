@@ -28,6 +28,9 @@
   .main_wrapper {
     width: 600px;
   }
+  .main_content {
+    /* height: 100%; */
+  }
 
   .main_page_content {
     margin-top: 40px;
@@ -105,4 +108,36 @@
   }
 
   /* ============================================================================================ */
+  .main_star_1 {
+    position: absolute;
+    top: calc(50% - 5px);
+    right: calc(50% + 180px);
+  }
+  .main_star_2 {
+    position: absolute;
+    top: calc(50% - 265px);
+    right: calc(50% - 90px);
+  }
+  /* .main_star_3 {
+    position: absolute;
+    top: calc(50% - 505px);
+    right: calc(50% + 150px);
+  } */
+  .main_star_4 {
+    position: absolute;
+    top: calc(50% - 110px);
+    right: calc(50% - 220px);
+  }
+  .main_star_5 {
+    position: absolute;
+    top: calc(50% - 250px);
+    right: calc(50% - 170px);
+    /* top: calc(50% - 190px);
+    right: calc(50% - 170px); */
+  }
+  .main_star_6 {
+    position: absolute;
+    top: calc(50% - 90px);
+    right: calc(50% + 140px);
+  }
 }

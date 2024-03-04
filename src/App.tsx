@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Web.css";
 import "./Mobile.css";
 import "./index.css";
+import "./main.css";
 import _ from "lodash";
 
 // import { BrowserRouter, Routes, Route } from "react-router-dom";

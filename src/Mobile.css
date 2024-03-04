@@ -29,7 +29,7 @@
 
   .main_wrapper {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
   }
 
   .main_content {
@@ -112,5 +112,12 @@
 
   .padding_bottom {
     padding-bottom: 24px;
+  }
+  /* ============================================================================================ */
+
+  .main_star_1 {
+    position: absolute;
+    top: calc(50% - 315px);
+    right: calc(50% + 116px);
   }
 }

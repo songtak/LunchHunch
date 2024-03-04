@@ -41,17 +41,25 @@ const MainRouter = () => {
             }}
           >
             <div className="title">
+              {/* <span className="star3 w60 main_star_1 animate__animated animate__flash" />
+              <span className="logo_heart_shine w80 main_star_2  animate__animated animate__flash" />
+              <span className="logo_heart_in_heart w60  main_star_3 animate__animated animate__flash" />
+              <span className="logo_2 w60 main_star_4 animate__animated animate__flash" /> */}
+              {/* <span className="logo_star w60 main_star_6 animate__animated animate__flash" /> */}
               {pathname === "/" && (
-                <div
-                  className="animate__animated animate__fadeInDown FuturaBoldItalic"
-                  style={{ marginTop: "80px" }}
-                >
-                  <div>Lunch</div>
-                  <div className="wcenter">
-                    <span className="logo_1 w60 h60" />
+                <>
+                  <span className="logo_star w20 main_star_5 animate__animated animate__flash" />
+                  <div
+                    className="animate__animated animate__fadeInDown FuturaBoldItalic"
+                    style={{ marginTop: "80px" }}
+                  >
+                    <div>Lunch</div>
+                    <div className="wcenter">
+                      {/* <span className="logo_heart_shine w60 h60" /> */}
+                    </div>
+                    <div>Hunch</div>
                   </div>
-                  <div>Hunch</div>
-                </div>
+                </>
               )}
               {pathname !== "/" && (
                 <div
@@ -60,7 +68,7 @@ const MainRouter = () => {
                 >
                   <span>Lunch</span>
                   <span
-                    className="logo_1 w40 h40"
+                    className="logo_star w20 h20"
                     style={{
                       fontSize: "40px",
                       marginRight: 8,

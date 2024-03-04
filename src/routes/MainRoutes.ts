@@ -32,4 +32,9 @@ export const MainRoutes: RoutePropInterface[] = [
     path: "/random-number",
     element: Pages.RandomNumberPage,
   },
+  {
+    title: "games/random-button",
+    path: "/random-button",
+    element: Pages.RandomButtonPage,
+  },
 ];
