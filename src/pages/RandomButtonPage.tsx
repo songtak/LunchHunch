@@ -37,10 +37,21 @@ const RandomButtonPage = () => {
     setSelectedPlayer([...selectedPlayer, player]);
   };
 
-  console.log("ddd", selectedPlayer.includes(1));
+  function intersect(arr1: number[], arr2: number[]) {
+    // 결과를 담을 배열
+    const result = [];
 
-  console.log("selectedPlayer", selectedPlayer);
-  console.log("winners", winners);
+    // 각 배열의 요소를 반복하면서 겹치는 숫자를 찾음
+    for (const num of arr1) {
+      if (arr2.includes(num)) {
+        result.push(num);
+      }
+    }
+
+    return result;
+  }
+
+  const intersectingNumbers = intersect(selectedPlayer, winners);
 
   return (
     <div>
@@ -122,31 +133,23 @@ const RandomButtonPage = () => {
             {Array.from({ length: playersCount }, (_, i) => i + 1).map(
               (player) => (
                 <button
-                  className={`button-29 ${
-                    selectedPlayer.includes(player) && "disabled"
-                  }`}
+                  disabled={selectedPlayer.includes(player)}
+                  className={`button-29 
+                   ${intersectingNumbers.includes(player) && "winner_button"} `}
                   role="button"
+                  style={{ fontSize: 16 }}
                   onClick={() => {
-                    console.log(
-                      "selectedPlayer.includes(player)",
-                      selectedPlayer.includes(player)
-                    );
-
-                    // window.location.reload();
-                    // !selectedPlayer.includes(player) &&
                     handlePlayerButtonClick(player);
                   }}
-                ></button>
-                // <button
-                //   key={player}
-                //   onClick={() => handlePlayerButtonClick(player)}
-                //   // disabled={winners.length > 0}
-                // >
-                //   {`Player ${player}`}
-                // </button>
+                >
+                  {!selectedPlayer.includes(player) && <>{player}</>}
+                  {selectedPlayer.includes(player) &&
+                    intersectingNumbers.includes(player) && <>☠️</>}
+                  {selectedPlayer.includes(player) &&
+                    !intersectingNumbers.includes(player) && <>🎉</>}
+                </button>
               )
             )}
-            {/* 🎉 {winners.join(", ")} 🫵 */}
           </div>
 
           <div>
