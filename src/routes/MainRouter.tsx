@@ -19,12 +19,14 @@ const MainRouter = () => {
       ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
       setInitialized(true);
     }
-  }, [process.env.REACT_APP_GOOGLE_ANALYTICS_ID, process.env.REACT_APP_PROD]);
+  }, [process.env.REACT_APP_PROD, process.env.REACT_APP_GOOGLE_ANALYTICS_ID]);
 
   useEffect(() => {
     if (initialized) {
+      console.log("pathname", pathname);
+
       ReactGA.set({ page: pathname });
-      ReactGA.send(`${pathname}`);
+      ReactGA.send("pageview");
     }
   }, [initialized, pathname]);
 
