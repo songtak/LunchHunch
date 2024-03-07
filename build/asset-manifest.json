@@ -1,29 +1,38 @@
 {
   "files": {
-    "main.css": "/static/css/main.29a38e51.css",
-    "main.js": "/static/js/main.635fb46a.js",
+    "main.css": "/static/css/main.5ca785c4.css",
+    "main.js": "/static/js/main.880bd353.js",
     "static/js/787.d844ba0d.chunk.js": "/static/js/787.d844ba0d.chunk.js",
     "static/media/Chilgok_lws.ttf": "/static/media/Chilgok_lws.82c2fcd50675624f43ca.ttf",
     "static/media/yuri.ttf": "/static/media/yuri.f03c3b5c294b4de1ea32.ttf",
     "static/media/father.ttf": "/static/media/father.8e45ef5199e72ca5b914.ttf",
     "static/media/cursyger.ttf": "/static/media/cursyger.345df20ac918a50e9a34.ttf",
     "static/media/Bolderslant.ttf": "/static/media/Bolderslant.8845cf92f884cfdc6e98.ttf",
+    "static/media/logo_star.png": "/static/media/logo_star.7168ec7329b7fbd1e39a.png",
+    "static/media/logo_heart_in_shine.png": "/static/media/logo_heart_in_shine.f501dcc8404faf5b05ee.png",
     "static/media/logo1.png": "/static/media/logo1.cca1f93320edeaa8779c.png",
+    "static/media/logo_heart_shine.png": "/static/media/logo_heart_shine.8a0e62bfbf80120e4b5c.png",
     "static/media/YouDense-Glass-BlowBold.ttf": "/static/media/YouDense-Glass-BlowBold.14a4ce0388d221deb71a.ttf",
     "static/media/futura.ttf": "/static/media/futura.71d20cae1da6df8d2a23.ttf",
+    "static/media/star1.png": "/static/media/star1.e1e4e2a2bdd9b3084254.png",
     "static/media/StayPuft.woff": "/static/media/StayPuft.29ee64929efa142efc08.woff",
     "static/media/LCMogi-A.ttf": "/static/media/LCMogi-A.c9d38faf9f88b1215869.ttf",
+    "static/media/logo_heart_in_heart.png": "/static/media/logo_heart_in_heart.ef5f0c647b6125545a50.png",
+    "static/media/logo_heart.png": "/static/media/logo_heart.9b9bbf27a608ecaec06c.png",
     "static/media/FuturaBoldItalic.ttf": "/static/media/FuturaBoldItalic.d4a603f6dc11d13d50b9.ttf",
     "static/media/futuralightbt.ttf": "/static/media/futuralightbt.ead7282f8edac7904e53.ttf",
+    "static/media/star2.png": "/static/media/star2.172d364d9b8e7cf1251c.png",
     "static/media/Hugest.woff": "/static/media/Hugest.091e7add36c1877c9cb4.woff",
+    "static/media/logo2.png": "/static/media/logo2.28607f6b74cfd16d8904.png",
+    "static/media/star3.png": "/static/media/star3.6b1b0a2021a81b7102e8.png",
     "static/media/rondula.ttf": "/static/media/rondula.b1ed230a00dd45ad3f45.ttf",
     "index.html": "/index.html",
-    "main.29a38e51.css.map": "/static/css/main.29a38e51.css.map",
-    "main.635fb46a.js.map": "/static/js/main.635fb46a.js.map",
+    "main.5ca785c4.css.map": "/static/css/main.5ca785c4.css.map",
+    "main.880bd353.js.map": "/static/js/main.880bd353.js.map",
     "787.d844ba0d.chunk.js.map": "/static/js/787.d844ba0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29a38e51.css",
-    "static/js/main.635fb46a.js"
+    "static/css/main.5ca785c4.css",
+    "static/js/main.880bd353.js"
   ]
 }
