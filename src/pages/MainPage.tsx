@@ -67,6 +67,19 @@ const MainPage = ({ setSelectedPage }: any) => {
           ☕️
         </button>
       </div>
+      <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
+        <button
+          className="button-28-double futura font14"
+          role="button"
+          onClick={() => {
+            // setSelectedPage("list");
+            handleClickLocation("/info");
+          }}
+        >
+          <div>What is</div>
+          <div>Lunch-Hunch?</div>
+        </button>
+      </div>
       {/* <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
         <button
           className="button-28 "

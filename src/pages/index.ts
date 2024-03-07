@@ -5,6 +5,7 @@ import RandomMenuPage from "./RandomMenuPage";
 import MiniGameListPage from "./MiniGameListPage";
 import RandomNumberPage from "./RandomNumberPage";
 import RandomButtonPage from "./RandomButtonPage";
+import InfoPage from "./InfoPage";
 
 export {
   ListPage,
@@ -14,4 +15,5 @@ export {
   MiniGameListPage,
   RandomNumberPage,
   RandomButtonPage,
+  InfoPage,
 };

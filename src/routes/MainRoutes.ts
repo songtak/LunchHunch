@@ -8,6 +8,11 @@ export const MainRoutes: RoutePropInterface[] = [
     element: Pages.MainPage,
   },
   {
+    title: "info",
+    path: "/info",
+    element: Pages.InfoPage,
+  },
+  {
     title: "random",
     path: "/random",
     element: Pages.RandomMenuPage,

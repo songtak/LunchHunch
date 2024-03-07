@@ -34,10 +34,16 @@ const RandomNumberPage = () => {
 
   return (
     <div>
+      <div
+        className="futura font24"
+        style={{ paddingTop: "60px", fontWeight: "bolder" }}
+      >
+        [ Random Number ]
+      </div>
       {!playersCount && (
         <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
-          <div style={{ marginBottom: 40 }}>
-            <label style={{ fontSize: 30 }}>참가 인원</label>
+          <div style={{ marginBottom: 24 }}>
+            <label style={{ fontSize: 24 }}>참가 인원</label>
           </div>
           <Select
             placeholder="인원"
@@ -57,15 +63,38 @@ const RandomNumberPage = () => {
               </MenuItem>
             ))}
           </Select>
+
+          <div style={{ marginBottom: "24px", marginTop: "64px" }}>
+            <div
+              style={{
+                marginBottom: "8px",
+                fontSize: "14px",
+                fontWeight: "bold",
+                color: "gray",
+              }}
+            >
+              게임 방법
+            </div>
+            <div style={{ color: "gray", fontSize: "12px" }}>
+              <div style={{ marginBottom: "8px" }}>
+                1. 참가 인원과 커피를 살 당첨 인원을 고릅니다.
+              </div>
+              <div>2. 숫자 1부터 참가 인원 수만큼</div>
+              <div style={{ marginBottom: "8px" }}>
+                중복되지 않게 각자 숫자를 선택합니다.
+              </div>
+              <div>3. 당첨 결과 확인</div>
+            </div>
+          </div>
         </div>
       )}
       {!coffeeBuyersCount && playersCount && (
-        <div>
-          <div style={{ marginBottom: 40 }}>
-            <div style={{ marginBottom: 40, fontSize: 24 }}>
+        <div className="mt_30">
+          <div style={{ marginBottom: 24 }}>
+            <div style={{ marginBottom: 24, fontSize: 22 }}>
               참가 인원 : {playersCount}
             </div>
-            <label style={{ fontSize: 30 }}>당첨 인원</label>
+            <label style={{ fontSize: 24 }}>당첨 인원</label>
           </div>
           <Select
             style={{ height: 40, width: 160 }}
@@ -89,8 +118,8 @@ const RandomNumberPage = () => {
         </div>
       )}
       {playersCount && coffeeBuyersCount && winners.length === 0 && (
-        <div>
-          <div style={{ marginBottom: 40, fontSize: 24 }}>
+        <div className="mt_30">
+          <div style={{ marginBottom: 40, fontSize: 22 }}>
             <div style={{ marginBottom: 20 }}>참가 인원 : {playersCount}</div>
 
             <div>당첨 인원 : {coffeeBuyersCount}</div>
@@ -122,6 +151,17 @@ const RandomNumberPage = () => {
               }}
             >
               다시하기
+            </button>
+          </div>
+          <div className="mt_30">
+            <button
+              className="button-28 "
+              role="button"
+              onClick={() => {
+                window.location.href = "/#/games";
+              }}
+            >
+              목록으로
             </button>
           </div>
           <div className="KoddiUDOnGothic-Regular mt_30">

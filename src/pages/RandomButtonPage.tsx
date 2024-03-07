@@ -55,10 +55,16 @@ const RandomButtonPage = () => {
 
   return (
     <div>
+      <div
+        className="futura font24"
+        style={{ paddingTop: "60px", fontWeight: "bolder" }}
+      >
+        [ Random Button ]
+      </div>
       {!playersCount && (
         <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
-          <div style={{ marginBottom: 40 }}>
-            <label style={{ fontSize: 30 }}>참가 인원</label>
+          <div style={{ marginBottom: 24 }}>
+            <label style={{ fontSize: 24 }}>참가 인원</label>
           </div>
           <Select
             placeholder="인원"
@@ -78,15 +84,33 @@ const RandomButtonPage = () => {
               </MenuItem>
             ))}
           </Select>
+          <div style={{ marginBottom: "24px", marginTop: "64px" }}>
+            <div
+              style={{
+                marginBottom: "8px",
+                fontSize: "14px",
+                fontWeight: "bold",
+                color: "gray",
+              }}
+            >
+              게임 방법
+            </div>
+            <div style={{ color: "gray", fontSize: "12px" }}>
+              <div style={{ marginBottom: "8px" }}>
+                1. 참가 인원과 커피를 살 당첨 인원을 고릅니다.
+              </div>
+              <div>2. 생성된 버튼을 클릭해 결과를 확인합니다.</div>
+            </div>
+          </div>
         </div>
       )}
-      {!coffeeBuyersCount && playersCount && (
-        <div>
-          <div style={{ marginBottom: 40 }}>
-            <div style={{ marginBottom: 40, fontSize: 24 }}>
+      {!coffeeBuyersCount && playersCount ? (
+        <div className="mt_30">
+          <div style={{ marginBottom: 24 }}>
+            <div style={{ marginBottom: 24, fontSize: 22 }}>
               참가 인원 : {playersCount}
             </div>
-            <label style={{ fontSize: 30 }}>당첨 인원</label>
+            <label style={{ fontSize: 24 }}>당첨 인원</label>
           </div>
           <Select
             style={{ height: 40, width: 160 }}
@@ -108,28 +132,32 @@ const RandomButtonPage = () => {
             )}
           </Select>
         </div>
+      ) : (
+        <></>
       )}
-      {playersCount && coffeeBuyersCount && winners.length === 0 && (
-        <div>
-          <div style={{ marginBottom: 40, fontSize: 24 }}>
+      {playersCount && coffeeBuyersCount && winners.length === 0 ? (
+        <div className="mt_30">
+          <div style={{ marginBottom: 40, fontSize: 22 }}>
             <div style={{ marginBottom: 20 }}>참가 인원 : {playersCount}</div>
 
             <div>당첨 인원 : {coffeeBuyersCount}</div>
           </div>
           <button
-            className="button-28 "
+            className="button-28 futura"
             role="button"
             onClick={() => {
               handleStartGame();
             }}
           >
-            start
+            결과 확인
           </button>
         </div>
+      ) : (
+        <></>
       )}
       {winners.length > 0 && (
         <div className="KoddiUDOnGothic-Regular mt_30 animate__animated animate__slideInUp">
-          <div style={{ marginBottom: 40, fontSize: 32 }}>
+          <div style={{ marginBottom: 40, fontSize: 24 }}>
             {Array.from({ length: playersCount }, (_, i) => i + 1).map(
               (player) => (
                 <button
@@ -161,6 +189,17 @@ const RandomButtonPage = () => {
               }}
             >
               다시하기
+            </button>
+          </div>
+          <div className="mt_30">
+            <button
+              className="button-28 "
+              role="button"
+              onClick={() => {
+                window.location.href = "/#/games";
+              }}
+            >
+              목록으로
             </button>
           </div>
           <div className="KoddiUDOnGothic-Regular mt_30">

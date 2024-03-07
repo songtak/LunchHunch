@@ -120,4 +120,32 @@
     top: calc(50% - 315px);
     right: calc(50% + 116px);
   }
+
+  .main_star_2 {
+    position: absolute;
+    top: calc(50% - 265px);
+    right: calc(50% - 90px);
+  }
+  /* .main_star_3 {
+    position: absolute;
+    top: calc(50% - 505px);
+    right: calc(50% + 150px);
+  } */
+  .main_star_4 {
+    position: absolute;
+    top: calc(50% - 110px);
+    right: calc(50% - 220px);
+  }
+  .main_star_5 {
+    position: absolute;
+    top: calc(50% - 250px);
+    right: calc(50% - 140px);
+    /* top: calc(50% - 190px);
+    right: calc(50% - 170px); */
+  }
+  .main_star_6 {
+    position: absolute;
+    top: calc(50% - 90px);
+    right: calc(50% + 140px);
+  }
 }
